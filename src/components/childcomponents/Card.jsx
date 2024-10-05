@@ -3,8 +3,9 @@ import { WobbleCard } from "../ui/wobble-card";
 import './Card.css';
 export function WobbleCardDemo() {
     return (
+
         <div
-            className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+            className="cards grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
             <WobbleCard
                 containerClassName="card-1 col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
                 className="">
@@ -42,6 +43,7 @@ export function WobbleCardDemo() {
 
             </WobbleCard>
         </div>
+
     );
 }
 export default WobbleCardDemo;

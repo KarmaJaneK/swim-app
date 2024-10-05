@@ -1,46 +1,57 @@
 /* src/components/childcomponents/Card.css */
+body{
+    justify-content: center;
+}
+
 .grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 16px; /* Adjust the gap as needed */
+    gap: 20px; /* Adjust the gap as needed */
+    justify-content: space-between; /* Center the grid container */
+    width: 100%; /* Ensure the grid container takes up the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 0 auto; /* Center the grid container */
+
 }
 
 .grid > * {
     flex: 1 1 calc(33.333% - 16px); /* Adjust the width and gap as needed */
+    max-width: calc(33.333% - 16px); /* Ensure cards don't stretch too wide */
+    margin: 0; /* Remove any default margin */
 }
 
 @media (max-width: 1024px) {
     .grid > * {
         flex: 1 1 calc(50% - 16px);
+        max-width: calc(50% - 16px);
     }
 }
 
 @media (max-width: 768px) {
     .grid > * {
         flex: 1 1 100%;
+        max-width: 100%;
     }
 }
-.card-1{
+
+.card-1 {
     background-image: url("src/assets/asian-happy-kid-playing-slider-swimming-pool.jpg");
     background-size: cover;
     background-position: center;
-
 }
-.card-2{
+
+.card-2 {
     background-image: url("src/assets/little-cute-baby-boy-instructor-with-kid-mother-with-son.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.card-3{
+.card-3 {
     background-image: url("src/assets/two-schoolgirl-water-polo-players-listening-teacher-poolside-have-fun-play-splash-blue-swimming-pool.jpg");
     background-size: cover;
     background-position: center;
-
-
-
 }
-.card-1,.card-2,.card-3{
+
+.card-1, .card-2, .card-3 {
     height: 300px;
     border-radius: 10%;
     overflow: hidden;
