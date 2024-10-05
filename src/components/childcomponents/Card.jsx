@@ -1,6 +1,6 @@
 
 import { WobbleCard } from "../ui/wobble-card";
-
+import './Card.css';
 export function WobbleCardDemo() {
     return (
         <div
