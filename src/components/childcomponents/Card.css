@@ -1,0 +1,50 @@
+/* src/components/childcomponents/Card.css */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust the gap as needed */
+}
+
+.grid > * {
+    flex: 1 1 calc(33.333% - 16px); /* Adjust the width and gap as needed */
+}
+
+@media (max-width: 1024px) {
+    .grid > * {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid > * {
+        flex: 1 1 100%;
+    }
+}
+.card-1{
+    background-image: url("src/assets/asian-happy-kid-playing-slider-swimming-pool.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.card-2{
+    background-image: url("src/assets/little-cute-baby-boy-instructor-with-kid-mother-with-son.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card-3{
+    background-image: url("src/assets/two-schoolgirl-water-polo-players-listening-teacher-poolside-have-fun-play-splash-blue-swimming-pool.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+.card-1,.card-2,.card-3{
+    height: 300px;
+    border-radius: 10%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
