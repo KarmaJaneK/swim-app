@@ -5,6 +5,12 @@
 -hero section
 -footer/links
 
+-search bar
+-social media links 
+-newsletter signuo for promotions
+- featured/curated articles from third parties
+
+
 
 ### Prebuilt Lesson plans 
 
