@@ -23,6 +23,8 @@
 
 - some activities fall under multiple categories 
 
+-carousel of nursery rhymes and recommend songs with links
+
 ### Lesson Builder:
 
 - Drop down/accordion of activities according to catagory to
