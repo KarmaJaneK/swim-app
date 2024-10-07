@@ -1,10 +1,12 @@
-"use client";
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import { cn } from "../../utils/cn.js";
 
 export const WobbleCard = ({
+                               text,
+                               title,
+                               image,
                                children,
                                containerClassName,
                                className,
@@ -40,25 +42,34 @@ export const WobbleCard = ({
             )}
         >
             <div
-                className="relative h-full [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))] sm:mx-0 sm:rounded-2xl overflow-hidden"
+                className="flex flex-col sm:flex-row h-full"
                 style={{
-                    boxShadow:
-                        "0 10px 32px rgba(34, 42, 53, 0.12), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.05), 0 4px 6px rgba(34, 42, 53, 0.08), 0 24px 108px rgba(47, 48, 55, 0.10)",
+                    boxShadow: "0 10px 32px rgba(34, 42, 53, 0.12), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.05), 0 4px 6px rgba(34, 42, 53, 0.08), 0 24px 108px rgba(47, 48, 55, 0.10)",
                 }}
             >
-                <motion.div
-                    style={{
-                        transform: isHovering
-                            ? `translate3d(${-mousePosition.x}px, ${-mousePosition.y}px, 0) scale3d(1.03, 1.03, 1)`
-                            : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
-                        transition: "transform 0.1s ease-out",
-                    }}
-                    className={cn("h-full px-4 py-20 sm:px-10", className)}
-                >
-                    <Noise />
-                    {children}
-                </motion.div>
+                <div className="w-full sm:w-1/2 relative h-full">
+                    <img
+                        src={image}
+                        alt={title}
+                        className="object-contain h-full"
+                    />
+                </div>
+                <div className="w-1/2 flex flex-col justify-center p-4">
+                    <h2 className="text-xl font-bold mb-2 text-white">{title}</h2>
+                    <p className="text-gray-200">{text}</p>
+                </div>
             </div>
+            <motion.div
+                style={{
+                    transform: isHovering
+                        ? `translate3d(${-mousePosition.x}px, ${-mousePosition.y}px, 0) scale3d(1.03, 1.03, 1)`
+                        : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
+                    transition: "transform 0.1s ease-out",
+                }}
+                className={cn("h-full px-4 py-20 sm:px-10", className)}
+            >
+                {children}
+            </motion.div>
         </motion.section>
     );
 };
@@ -67,18 +78,9 @@ WobbleCard.propTypes = {
     children: PropTypes.node.isRequired,
     containerClassName: PropTypes.string,
     className: PropTypes.string,
-};
-
-const Noise = () => {
-    return (
-        <div
-            className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)]"
-            style={{
-                backgroundImage: "url('assets/noise (1).webp')",
-                backgroundSize: "30%",
-            }}
-        ></div>
-    );
+    text: PropTypes.string.isRequired,
+    title: PropTypes.node.isRequired,
+    image: PropTypes.string.isRequired,
 };
 
 export default WobbleCard;

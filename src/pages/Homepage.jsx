@@ -1,14 +1,21 @@
 // src/pages/Homepage.jsx
 
-import { Link } from 'react-router-dom';
+
 import WobbleCardDemo from "../components/childcomponents/Card.jsx";
 import './Homepage.css'
+import { Box } from "../components/ui/Box.jsx";
+import { Header } from "../components/ui/Header.jsx";
 function HomePage() {
     return (
         <div className="container">
-            <h1>Welcome to the Homepage</h1>
-            <p>This is the homepage of your React application.</p>
-            <WobbleCardDemo />
+            <Header className={"header"}/>
+            <div className="wrapper">
+            <Box classname={"absolute-box"}/>
+                <div className={"content"}>
+            <WobbleCardDemo className={"cards"}/>
+                </div>
+            </div>
+
         </div>
     );
 }

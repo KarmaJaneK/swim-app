@@ -2,3 +2,62 @@ body{
     background-image: url("src/assets/jaanus-jagomagi-OjDzDYxyEUI-unsplash (1).jpg");
 
 }
+.container {
+display: flex;
+justify-content: space-between;
+    width: 100%;
+
+
+.header{
+    display: flex;
+
+}
+
+    }
+.wrapper{
+    display: flex;
+justify-content: space-between;
+   align-items: center;
+
+padding-left:20px;
+    margin: 0 auto;
+
+
+
+}
+.absolute-box{
+    position: fixed;
+      z-index: 1;
+
+    height: 624px;
+    width: 422px;
+}
+.cards {
+
+    gap: 1rem;
+
+    margin: 0 auto;    z-index: 2;
+
+
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.box {
+     position: fixed;
+     height: 624px;
+     width: 422px;
+ }
+
+.box .rectangle {
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    height: 624px;
+    opacity: 0.6;
+    position: fixed;
+    z-index: 1;
+    width: 422px;
+}

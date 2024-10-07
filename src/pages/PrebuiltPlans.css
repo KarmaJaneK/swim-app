@@ -1,0 +1,206 @@
+.desktop {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.desktop .div {
+    background-image: url("src/assets/jaanus-jagomagi-OjDzDYxyEUI-unsplash (1).jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 2631px;
+    position: relative;
+    width: 4801px;
+}
+
+.desktop .overlap-group {
+    border-radius: 30px;
+    height: 2409px;
+    left: 2594px;
+    position: absolute;
+    top: 177px;
+    width: 1894px;
+}
+
+.desktop .rectangle-2 {
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    height: 2409px;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 1894px;
+}
+
+.desktop .frame {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 202px;
+    left: 67px;
+    position: absolute;
+    top: 113px;
+    width: 633px;
+}
+
+.desktop .img {
+    height: 575px;
+    object-fit: cover;
+    position: relative;
+    width: 606px;
+}
+
+.desktop .rectangle-3 {
+    height: 594px;
+    object-fit: cover;
+    position: relative;
+    width: 607px;
+}
+
+.desktop .rectangle-4 {
+    align-self: stretch;
+    height: 617px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+
+.desktop .frame-2 {
+    background-color: #023933;
+    border-radius: 30px;
+    height: 577px;
+    left: 779px;
+    overflow: hidden;
+    position: absolute;
+    top: 113px;
+    width: 1036px;
+}
+
+.desktop .text-wrapper {
+    color: #ffffff;
+    font-family: "Bebas Neue-Regular", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    left: 43px;
+    letter-spacing: 0;
+    line-height: 128px;
+    position: absolute;
+    top: 47px;
+    white-space: nowrap;
+    width: 785px;
+}
+
+.desktop .p {
+    color: #ffffff;
+    font-family: "Beiruti-Regular", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    left: 43px;
+    letter-spacing: 0;
+    line-height: 128px;
+    position: absolute;
+    top: 211px;
+    white-space: nowrap;
+    width: 648px;
+}
+
+.desktop .frame-3 {
+    background-color: #023933;
+    border-radius: 30px;
+    height: 577px;
+    left: 779px;
+    position: absolute;
+    top: 899px;
+    width: 1036px;
+}
+
+.desktop .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Bebas Neue-Regular", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    left: 61px;
+    letter-spacing: 0;
+    line-height: 128px;
+    position: absolute;
+    top: 58px;
+    white-space: nowrap;
+    width: 785px;
+}
+
+.desktop .browse-our-library {
+    color: #ffffff;
+    font-family: "Beiruti-Regular", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    left: 61px;
+    letter-spacing: 0;
+    line-height: 128px;
+    position: absolute;
+    top: 214px;
+    white-space: nowrap;
+    width: 648px;
+}
+
+.desktop .frame-4 {
+    background-color: #023933;
+    border-radius: 30px;
+    height: 577px;
+    left: 779px;
+    position: absolute;
+    top: 1706px;
+    width: 1036px;
+}
+
+.desktop .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Bebas Neue-Regular", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    left: 31px;
+    letter-spacing: 0;
+    line-height: 128px;
+    position: absolute;
+    top: 48px;
+    white-space: nowrap;
+    width: 785px;
+}
+
+.desktop .overlap {
+    height: 1398px;
+    left: 137px;
+    position: absolute;
+    top: 219px;
+    width: 2278px;
+}
+
+.desktop .rectangle-instance {
+    left: 645px !important;
+    position: absolute !important;
+    top: 753px !important;
+}
+
+.desktop .the-ultimate-swim {
+    color: transparent;
+    font-family: "Bebas Neue-Regular", Helvetica;
+    font-size: 350px;
+    font-weight: 400;
+    height: 1398px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 128px;
+    position: absolute;
+    top: 0;
+    width: 2278px;
+}
+
+.desktop .span {
+    color: #2e2e2e;
+}
+
+.desktop .text-wrapper-4 {
+    color: #ff6600;
+}
