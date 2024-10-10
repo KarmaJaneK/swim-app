@@ -2,6 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import { cn } from "../../utils/cn.js";
+import "./Wobble-card.css";
 
 export const WobbleCard = ({
                                text,
@@ -36,27 +37,24 @@ export const WobbleCard = ({
                     : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
                 transition: "transform 0.1s ease-out",
             }}
-            className={cn(
-                "mx-auto w-full bg-indigo-800 relative rounded-2xl overflow-hidden",
-                containerClassName
-            )}
+            className={cn("wobble-card-container", containerClassName)}
         >
             <div
-                className="flex flex-col sm:flex-row h-full"
+                className="wobble-card-inner"
                 style={{
                     boxShadow: "0 10px 32px rgba(34, 42, 53, 0.12), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.05), 0 4px 6px rgba(34, 42, 53, 0.08), 0 24px 108px rgba(47, 48, 55, 0.10)",
                 }}
             >
-                <div className="w-full sm:w-1/2 relative h-full">
+                <div className="wobble-card-image-container">
                     <img
                         src={image}
                         alt={title}
-                        className="object-contain h-full"
+                        className="wobble-card-image"
                     />
                 </div>
-                <div className="w-1/2 flex flex-col justify-center p-4">
-                    <h2 className="text-xl font-bold mb-2 text-white">{title}</h2>
-                    <p className="text-gray-200">{text}</p>
+                <div className="wobble-card-content">
+                    <h2 className="wobble-card-title">{title}</h2>
+                    <p className="wobble-card-text">{text}</p>
                 </div>
             </div>
             <motion.div
@@ -66,7 +64,7 @@ export const WobbleCard = ({
                         : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
                     transition: "transform 0.1s ease-out",
                 }}
-                className={cn("h-full px-4 py-20 sm:px-10", className)}
+                className={cn("wobble-card-children", className)}
             >
                 {children}
             </motion.div>
